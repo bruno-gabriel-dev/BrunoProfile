@@ -53,11 +53,26 @@ body {
     color: #188bff;
 }
 
-.container {
-    padding: 15px 20px;
-    display: flex;
-    max-width: 1200px;
-    margin-top: 2%; 
+.main-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 40px;
+}
+
+.container,
+.side-content {
+  width: 50%;
+}
+
+.container p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.side-content {
+  width: 50%;
 }
 
 .rainbow-title span {
@@ -66,13 +81,13 @@ body {
 }
 
 @keyframes rainbowLetter {
-    0%   { color: #ff0000; }
-    16%  { color: #ff7a00; }
-    32%  { color: #fff400; }
-    48%  { color: #00ff00; }
-    64%  { color: #00ffff; }
-    80%  { color: #006eff; }
-    100% { color: #ff00ff; }
+    0%   { color: #00ffff; }
+    16%  { color: #00ccff; }
+    32%  { color: #00a2ff; }
+    48%  { color: #008cff; }
+    64%  { color: #0020ff; }
+    80%  { color: #0022ff; }
+    100% { color: #0011ff; }
 }
 .icon-container a {
     position: relative;
@@ -80,7 +95,7 @@ body {
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* underline animado */
+
 .icon-container a::after {
     content: '';
     position: absolute;
@@ -92,7 +107,7 @@ body {
     transition: width 0.35s ease;
 }
 
-/* hover effects */
+
 .icon-container a:hover {
     color: #ffffff;
     transform: translateY(-2px);
@@ -102,7 +117,7 @@ body {
     width: 100%;
 }
 
-/* glow suave no ícone */
+
 .icon-container a:hover i {
     filter: drop-shadow(0 0 6px rgba(24, 139, 255, 0.7));
 }
